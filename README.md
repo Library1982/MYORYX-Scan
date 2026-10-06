@@ -27,7 +27,7 @@ Import the repository. Framework: Other. No build command. Output directory: `pu
 Open the HTTPS website in Chrome. Use Add to home screen when available. This source is a web app, not an APK. A native Android package can be added later.
 
 ## Current limitations
-Manual rectangular cropping; no automatic page-edge detection, perspective correction, OCR, or searchable text. Images are resized to a maximum dimension of 2200 pixels. Pages are kept in memory and lost when the app reloads. Save the PDF before closing. Camera, device sharing, and home-screen installation require testing on the target phone. Offline use depends on successful initial caching and host access requirements.
+Automatic light-paper boundary proposals with manual crop review. Auto sizing matches image proportions (A4-like ratio or image fit); it does not measure physical paper. No perspective correction or searchable PDF text layer. Arabic/English OCR uses Tesseract.js 5.1.1 downloaded from jsDelivr, plus engine and language files; processing occurs on device. Extracted text is editable and exportable to TXT. JPG export/share applies to the selected page. The optional MYORYX watermark adds a footer band to PDF and JPG, keeping the original content unobscured. Device sharing falls back to download when unsupported. Images are resized to a maximum dimension of 2200 pixels. Pages are kept in memory and lost when the app reloads. Save the PDF before closing. Camera, device sharing, and home-screen installation require testing on the target phone. Offline use depends on successful initial caching and host access requirements.
 
 ## Validation
 JavaScript syntax checked. Generated two-page PDF opened successfully with a PDF parser, with embedded JPEGs and A4 dimensions.
